@@ -1,14 +1,24 @@
+// All named extension slots across the four Learnershood web apps.
+// Keep in sync with each app's slotRegistry.
 export type SlotName =
+  // Students web
+  | 'student.nav.item'
+  | 'student.activity'
+  | 'student.course.blockType'
   | 'student.dashboard.widget'
-  | 'student.marketplace.listing'
-  | 'creator.dashboard.widget'
-  | 'creator.marketplace.listing'
+  // Creators web
   | 'creator.nav.section'
-  | 'parent.hub.tile'
-  | 'parent.marketplace.listing'
-  | 'parent.nav.section'
+  | 'creator.tool'
+  | 'creator.lecture.blockType'
+  | 'creator.dashboard.widget'
+  // Parents web
+  | 'parent.nav.item'
+  | 'parent.child.tab'
+  | 'parent.inbox.type'
+  // Organisations web
   | 'org.nav.section'
-  | 'org.plugins.listing';
+  | 'org.dashboard.widget'
+  | 'org.settings.tab';
 
 export interface SlotContribution {
   id: string;
